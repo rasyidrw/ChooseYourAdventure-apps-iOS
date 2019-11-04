@@ -13,9 +13,41 @@ struct StoryBrain {
     var storyNumber = 0
     
     let stories = [
-        Story(title: "You see a fork in the road.", choice1: "Take a left.", choice1Destination: 1, choice2: "Take a right.", choice2Destination: 2),
-        Story(title: "You see a tiger.", choice1: "Shout for help.", choice1Destination: 0, choice2: "Play dead.", choice2Destination: 0),
-        Story(title: "You find a treasure chest.", choice1: "Open it.", choice1Destination: 0, choice2: "Check for traps.", choice2Destination: 0)
+        Story(title: "Pada suatu hari ada seorang laki-laki jomblo. Apa yang akan dia lakukan agar dia tidak jomblo?",
+              choice1: "Memperbaiki diri agar kelak menjadi laki-laki yang sukses, dan tamvan maksimal",
+              choice1Destination: 1,
+              choice2: "Stalking cewe cakep dongg biar ga jomblo lagiii",
+              choice2Destination: 2),
+        
+        Story(title: "Setelah dia sudah sukses dan tamvan, lalu apakah yang akan dilakukannya?",
+              choice1: "Cari jodoh lahh. Kan udah sukses dan tamvan...",
+              choice1Destination: 3,
+              choice2: "Nanti dulu jangan buru-buru cari jodohh. Cari ridho emak dulu. Karna ridho emak itu ridho nya Allah",
+              choice2Destination: 4),
+        
+        Story(title: "Tapi pas stalking gapunya kuota. Kan si laki-lakinya sobat misqueen :(",
+              choice1: "Cari wayfay dong di emol atau kape kape gituu biar hitss",
+              choice1Destination: 3,
+              choice2: "Jgn maksa. Jodoh udah ada yang atur. Ntr jg dateng sendiri pd waktu yang tepat",
+              choice2Destination: 4),
+        
+        Story(title: "Sukses? Udah. Tamvan? Dari lahir. Udah usaha terus tapi masih gadapet-dapet jugaaaa nihh?!",
+              choice1: "Tetap berdoa dan berusaha. Percayalah usaha dan doa itu tidak ada yang sia-sia :)",
+              choice1Destination: 4,
+              choice2: "Pelet dong......",
+              choice2Destination: 5),
+        
+        Story(title: "Alhamdulillah nak, ternyata kamu anak yang soleh dan berbakti kepada orangtua. Semoga hidupmu selalu bahagia walau bukan dengannya....",
+              choice1: "Alhamdulillah yah.. Sesuatu.",
+              choice1Destination: 0,
+              choice2: "Bct.",
+              choice2Destination: 5),
+        
+        Story(title: "Astaghfirullah nak, kamu ternyata lucknut sebenarnya whichis :(",
+              choice1: "Bodo amat :)",
+              choice1Destination: 0,
+              choice2: "Hidup-hidup gua ngapa lu yang ngatur?!",
+              choice2Destination: 0)
     ]
     
     func getStoryTitle() -> String {

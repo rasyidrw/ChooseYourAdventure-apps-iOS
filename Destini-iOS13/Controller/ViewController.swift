@@ -15,11 +15,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
     
-    //Create constants
+    
     var storyBrain = StoryBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        choice1Button.titleLabel?.adjustsFontSizeToFitWidth = true
+        choice1Button.titleLabel?.numberOfLines = 2
+        choice1Button.titleLabel?.minimumScaleFactor = 0.5
+        
+        choice2Button.titleLabel?.adjustsFontSizeToFitWidth = true
+        choice2Button.titleLabel?.numberOfLines = 2
+        choice2Button.titleLabel?.minimumScaleFactor = 0.5
         
         updateUI()
         
@@ -37,8 +45,6 @@ class ViewController: UIViewController {
         choice1Button.setTitle(storyBrain.getChoice1(), for: .normal)
         choice2Button.setTitle(storyBrain.getChoice2(), for: .normal)
     }
-    
-    
     
 }
 
